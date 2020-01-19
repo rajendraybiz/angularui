@@ -1,0 +1,17 @@
+<div class="container " ng-controller="loginController">
+  <h1>Admin User </h1>
+  <div ng-if="messaage != null" class="alert alert-danger">
+    {{messaage}}
+  </div>
+  <form class="col-md-5">
+    <div class="form-group">
+      <label for="email">Username:</label>
+      <input type="text" class="form-control" id="email" placeholder="Enter email" ng-model="email">
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" class="form-control" id="password" placeholder="Enter password" ng-model="password">
+    </div>
+    <button type="button" class="btn btn-default" ng-click="login()">Login</button>
+  </form>
+</div>

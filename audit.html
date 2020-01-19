@@ -1,0 +1,24 @@
+<div class="container" ng-controller="auditController" >
+ <button type="button" class="btn btn-default" ng-click="rdrctodshbrd()">Dashboard</button>
+ <button type="button" class="btn btn-primary" ng-click="logout()"> Logout </button>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#-sr</th>
+        <th>super email</th>
+        <th>activity</th>
+        <th>activity user</th>
+        <th>created date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="audit in audits">
+        <td>{{audit.sr}}</td>
+        <td>{{audit.email}}</td>
+        <td>{{audit.opretion_name}}</td>
+        <td>{{audit.new_user_email}}</td>
+        <td>{{audit.created_date}}</td>              
+      </tr>
+    </tbody>
+  </table>
+</div>
